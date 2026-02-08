@@ -28,7 +28,6 @@ jobs:
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
-        wait_for_deployment: false
         with:
           wait_for_deployment: false
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
